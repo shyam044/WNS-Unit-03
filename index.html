@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WNS Unit-03</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 1rem 0.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h2 { color: #0077cc; margin: 2rem 0 1rem; font-size: 1.6rem; }
+    h3 { color: #444; margin-top: 0.8rem; margin-bottom: 0.5rem; font-size: 1.3rem; }
+
+    /* Attractive bullet styling */
+    ul {
+      margin: 0.3rem 0 1rem 1rem;
+      padding-left: 1rem;
+      list-style: disc outside;
+    }
+    ul.nested { list-style: circle outside; margin-top: 0.3rem; padding-left: 1rem; }
+    ul.shallow { list-style: square outside; margin-top: 0.2rem; padding-left: 1rem; }
+
+    li { margin-bottom: 0.35rem; }
+
+    img {
+      display: block;
+      max-width: 80%;
+      height: auto;
+      margin: 1rem auto;
+      border-radius: 6px;
+    }
+
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 1rem; font-size: 1rem; background: transparent; }
+    th, td { border: 1px solid #ddd; padding: 0.8rem; text-align: left; vertical-align: top; }
+    th { background-color: #0077cc; color: white; font-weight: bold; }
+    tr:nth-child(even) { background-color: #f2f2f2; }
+    tr:hover { background-color: #e6f0ff; }
+
+    .table-responsive { overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; }
+    .table-responsive table { min-width: 640px; }
+
+    @media (max-width: 768px) {
+      body { font-size: 0.95rem; }
+      header { font-size: 1.3rem; padding: 0.8rem 0.5rem; }
+      .container { padding: 0.9rem; margin: 1.5rem auto; }
+      h2 { font-size: 1.3rem; margin-top: 1.8rem; }
+      h3 { font-size: 1.1rem; margin-top: 0.7rem; }
+      ul { margin-left: 0.5rem; padding-left: 0.7rem; }
+      ul.nested { padding-left: 0.8rem; }
+      ul.shallow { padding-left: 0.6rem; }
+      li { margin-bottom: 0.3rem; }
+      img { max-width: 100%; height: auto; }
+      th, td { padding: 0.6rem; }
+      .table-responsive table { min-width: 520px; }
+      .table-responsive { margin-bottom: 1rem; }
+    }
+
+    @media print { .container { page-break-after: always; } }
+
+    a:focus, button:focus, input:focus { outline: 3px solid rgba(0,119,204,0.35); outline-offset: 2px; }
+  </style>
+</head>
+
+<body>
+
+  <header>WNS Unit-03</header>
+
+  <div class="container">
+    <h2>1)Security Threats Faced by Wireless Devices</h2>
+
+    <ul>
+      <li>i)Physical Loss:
+        <ul class="nested">
+          <li>Devices like laptops, smartphones, etc can be lost or stolen easily</li>
+          <li>if the devices were stolen then the sensitive information could fall into the wrong hands</li>
+        </ul>
+      </li>
+
+      <li>ii)Information Leakage:
+        <ul class="nested">
+          <li>Sensitive Information can be leaked through careless actions either electronically or physically</li>
+        </ul>
+      </li>
+
+      <li>iii)Using WEP Encryption:
+        <ul class="nested">
+          <li>WEP stands for Wired Equivalent Privacy</li>
+          <li>Attacker can easily launch attacks on a system</li>
+          <li>Upgrade WEP to WPA/WPA2 to improve security</li>
+        </ul>
+      </li>
+
+      <li>iv)Eavesdropping:
+        <ul class="nested">
+          <li>Even if your data is Encrypted, attackers can still find a way to look for patterns</li>
+          <li>They don't see your actual content but observes your activities</li>
+        </ul>
+      </li>
+
+      <li>v)Man-in-the-middle attack:
+        <ul class="nested">
+          <li>Here, the attacker secretly intercepts the communication between user and the Internet</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>WNS Unit-03</header>
+
+  <div class="container">
+    <h2>2)Information Leakage:</h2>
+    <img src="WhatsApp Image 2025-11-11 at 19.59.09_ce6ae17b.jpg" alt="Information Leakage"/>
+
+    <ul>
+      <li>Sensitive Information can be leaked through careless actions either electronically or physically</li>
+
+      <li>Causes of Information Leakage:
+        <ul class="nested">
+          <li>i)Weak Access Control:
+            <ul class="shallow">
+              <li>unauthorized users can easily access the sensitive information because of poor permissions</li>
+            </ul>
+          </li>
+
+          <li>ii)Unsecure Wireless Networks:
+            <ul class="shallow">
+              <li>Attackers can easily acccess the information because of poor Encryption</li>
+            </ul>
+          </li>
+
+          <li>iii)Poor Data Disposal:
+            <ul class="shallow">
+              <li>Improper deletion of data make sensitive information recoverable</li>
+            </ul>
+          </li>
+
+          <li>iv)Insider Threats:
+            <ul class="shallow">
+              <li>This are the risks that come from within the organization</li>
+              <li>Intentionally leak the data</li>
+              <li>UnIntentionally data is spreaded</li>
+            </ul>
+          </li>
+
+          <li>v)Lost devices:
+            <ul class="shallow">
+              <li>Devices like Laptops, Phones etc... can be lost or stolen easily</li>
+              <li>if the devices is stolen then the sensitive information can be leaked</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>Prevention methods:
+        <ul class="nested">
+          <li>i)Implementing Strong Access Control:
+            <ul class="shallow">
+              <li>Only Authorized users can access the sensitive Information because of strict permissions</li>
+            </ul>
+          </li>
+
+          <li>ii)Secure Wireless Networks:
+            <ul class="shallow">
+              <li>Prevents the attackers to access the information by providing strong Encryption</li>
+            </ul>
+          </li>
+
+          <li>iii)Proper Data Disposal:
+            <ul class="shallow">
+              <li>Proper deletion of data make sensitive information unrecoverable</li>
+            </ul>
+          </li>
+
+          <li>iv)Insider Safety:
+            <ul class="shallow">
+              <li>Employees are trained to secure the data</li>
+            </ul>
+          </li>
+
+          <li>v)Secured Devices:
+            <ul class="shallow">
+              <li>Devices like Laptops, Phones etc... can't be lost or stolen easily</li>
+              <li>They Provide Encryption so sensitive information can't be leaked</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>WNS Unit-03</header>
+
+  <div class="container">
+    <h2>3)Layers in Physical Security:</h2>
+
+    <ul>
+      <li>Physical security involves protecting the data through multiple layers.</li>
+
+      <li>i)Deterrence:
+        <ul class="nested">
+          <li>It prevents the attacks by showing strong defenses.</li>
+          <li>Example:
+            <ul class="shallow">
+              <li>Physical Barriers</li>
+              <li>Combination Barriers</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>ii)Detection:
+        <ul class="nested">
+          <li>Detecting unauthorized activity immediately</li>
+          <li>Example:
+            <ul class="shallow">
+              <li>Motion Sensors</li>
+              <li>CCTV</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>iii)Access Control:
+        <ul class="nested">
+          <li>Only Authorized users can access the sensitive Information because of strict permissions</li>
+          <li>Techniques:
+            <ul class="shallow">
+              <li>Electronic Access Control</li>
+              <li>Mechanical Access Control</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>iv)Security Personnel:
+        <ul class="nested">
+          <li>They play a central role in all layers of security</li>
+          <li>Example:
+            <ul class="shallow">
+              <li>Administering electronic access control</li>
+              <li>Responding to Alarams</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>WNS Unit-03</header>
+
+  <div class="container">
+    <h2>4)Wireless Devices:</h2>
+
+    <ul>
+      <li>Wireless Devices uses radio waves to transmit the data without cables</li>
+      <li>Radio waves travel through walls and passess to the devices</li>
+      <li>Most Wireless Networks uses 2.4 GHz or 5 GHz Frequency Bandwidth</li>
+
+      <li>Example:
+        <ul class="nested">
+          <li>WiFi</li>
+          <li>Bluetooth</li>
+        </ul>
+      </li>
+
+      <li>Different Types of Wireless Devices:
+        <ul class="nested">
+          <li>i)Wireless Router:
+            <ul class="shallow">
+              <li>A wireless router allows users to connect to the Internet without cables.</li>
+              <li>They are Commonly used in Homes, Schools and Offices</li>
+            </ul>
+          </li>
+
+          <li>ii)Wireless Repeater:
+            <ul class="shallow">
+              <li>Wireless Repeater retransmits or amplifies the weak wireless signals</li>
+              <li>They are commonly used in Large Buildings</li>
+            </ul>
+          </li>
+
+          <li>iii)Wireless Adapters:
+            <ul class="shallow">
+              <li>Wireless Adapter is a hardware device that connects a computer to a wireless network.</li>
+              <li>There are mainly two types:
+                <ul class="shallow">
+                  <li>Card-Based Adapters</li>
+                  <li>USB Adapters</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>Advantages:
+        <ul class="nested">
+          <li>No physical cable needed</li>
+          <li>Easy Installation</li>
+          <li>connects to multiple devices</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>WNS Unit-03</header>
+
+  <div class="container">
+    <h2>5)FDMA vs TDMA vs CDMA</h2>
+
+    <ul>
+      <li>FDMA:
+        <ul class="nested">
+          <li>FDMA stands for Frequency Division Multiple Access</li>
+          <li>Each User gets a Separate frequency band</li>
+          <li>Divides the channel by Frequency</li>
+          <li>Synchronization is not required</li>
+          <li>It only needs guard bands</li>
+          <li>It is very simple to implement</li>
+          <li>It is less Flexible and Low Data Rate</li>
+          <li><img src="WhatsApp Image 2025-11-03 at 21.39.29_cf6b7a09.jpg" alt="FDMA image" /></li>
+        </ul>
+      </li>
+
+      <li>TDMA:
+        <ul class="nested">
+          <li>TDMA stands for Time Division Multiple Access</li>
+          <li>Each User gets a different time slot</li>
+          <li>Divides the channel by Time</li>
+          <li>Synchronization is required</li>
+          <li>It only needs guard time</li>
+          <li>It is simple to implement</li>
+          <li>It is medium Flexible and Moderate Data Rate</li>
+          <li><img src="WhatsApp Image 2025-11-03 at 21.40.53_b0978dfd.jpg" alt="TDMA image" /></li>
+        </ul>
+      </li>
+
+      <li>CDMA:
+        <ul class="nested">
+          <li>CDMA stands for Code Division Multiple Access</li>
+          <li>Each User gets a Unique Code</li>
+          <li>Divides the channel by Code</li>
+          <li>Synchronization is required</li>
+          <li>It needs both guard bands and guard time</li>
+          <li>It is complex to implement</li>
+          <li>It is High Flexible and High Data Rate</li>
+        </ul>
+      </li>
+
+      <li><img src="WhatsApp Image 2025-11-03 at 21.40.24_269256c4.jpg" alt="FDMA TDMA CDMA image" /></li>
+    </ul>
+  </div>
+
+  <header>WNS Unit-03</header>
+
+  <div class="container">
+    <h2>6)Spread Spectrum:</h2>
+    <img src="WhatsApp Image 2025-11-11 at 19.55.24_bd02dcb1.jpg" alt="Spread Spectrum"/>
+
+    <ul>
+      <li>Spread Spectrum is a Communication Technique used to spread the signals over a Frequency bandwidth</li>
+      <li>Spread Spectrum is a WideBand Modulation Technique</li>
+
+      <li>Principles:
+        <ul class="nested">
+          <li>i)WideBand Modulation:
+            <ul class="shallow">
+              <li>The Modulated signal is larger than the Original Data Signal</li>
+            </ul>
+          </li>
+
+          <li>ii)Redundancy:
+            <ul class="shallow">
+              <li>Each station allocated a Frequency Bandwidth larger than required to allow redundancy</li>
+            </ul>
+          </li>
+
+          <li>iii)Spreading:
+            <ul class="shallow">
+              <li>Spreading occurs after the signal is generated by using PN-code</li>
+              <li>PN-code stands for Psuedo Noise Code</li>
+              <li>Transmitter and receiver both uses same PN-Code for synchronizatoin</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>Types of Spread spectrum:
+        <ul class="nested">
+          <li>There are mainly two types:
+            <ul class="shallow">
+              <li>a)FHSS</li>
+              <li>b)DSSS</li>
+            </ul>
+          </li>
+
+          <li>a)FHSS:
+            <ul class="shallow">
+              <li>FHSS stands for Frequency Hopping Spread Spectrum</li>
+              <li>Rapidly Hops between different Frequency Bandwidth</li>
+              <li>It uses Hopping for spreading the data</li>
+              <li>Transmitter and Reciever both uses same Hopping Pattern for Synchronization</li>
+              <li>Example:
+                <ul class="shallow">
+                  <li>Bluetooth</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>b)DSSS:
+            <ul class="shallow">
+              <li>DSSS stands for Direct Sequence Spread Spectrum</li>
+              <li>Spreads the signals by using PN-Code</li>
+              <li>It uses Code Sequence for spreading the data</li>
+              <li>Transmitter and receiver both uses same PN-Code for synchronizatoin</li>
+              <li>Example:
+                <ul class="shallow">
+                  <li>WiFi</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <header>WNS Unit-03</header>
+
+  <div class="container">
+    <h2>7)Personal Digital Cellular (PDC):</h2>
+
+    <ul>
+      <li>PDC stands for Personal Digital Cellular</li>
+      <li>It is a Digital Cellular telecommunication system developed by Japan in 1990's</li>
+      <li>PDC operates in 800 MHz Frequency Bandwidth</li>
+      <li>PDC is designed to replace the analog systems with improving voice clarity and removing background noise</li>
+      <li>It uses ATC for improving the voice clarity,</li>
+      <li>ATC stands for Adaptive Transform Coding</li>
+
+      <li>Services provided by PDC:
+        <ul class="nested">
+          <li>Voice Communicatoin</li>
+          <li>Text-Based Communication(SMS)</li>
+          <li>Email</li>
+          <li>Web Browsing</li>
+        </ul>
+      </li>
+
+      <li>PDC plays a crucial role in Japan's Mobile communication History</li>
+      <li>It acted as a Basic Foundation for other technologies like 3G, 4G, 5G, etc...</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
